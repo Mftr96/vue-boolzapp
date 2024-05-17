@@ -63,6 +63,12 @@ section{
     padding: 1rem;
 }
 
+.new-msg i{
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
 .new-msg >div> p{
     text-decoration: underline;
 }
@@ -71,6 +77,11 @@ section{
 .search-msg{
     padding: 0.5rem;
     background-color: rgb(250, 250, 250) ;
+
+}
+.search-msg div{
+    display: flex;
+    gap: 0.5rem;
 }
 
 .search-msg>div{
@@ -83,8 +94,27 @@ section{
 .search-msg input{
     width: 95%;
 }
-/* ------------------------------------------------- */
+/* ------CONTACTS STYLE------------ */
 
+.contact{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 0.3rem;
+}
+
+.contact-left{
+    width: 70%;
+}
+.contact img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.contact-txt p{
+    width:150px;
+    font-size: small;
+}
 /* RIGHT-APP STYLE */
 .right-app{
     width: 67%;
@@ -115,17 +145,16 @@ section{
 .chat{
     background-image: url(../img/mine.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     border: 1px solid black;
-    height: 78%;
+    height: 84%;
 }
 
 /* --------INPUT-CHAT STYLE-----------------  */
 
 .input-chat{
-    border: 1px solid pink;
-    padding: 0.5rem;
+    padding: 1.2rem;
     display: flex;
     justify-content: space-between;
 }
