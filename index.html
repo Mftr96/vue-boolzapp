@@ -45,13 +45,14 @@
                             <input type="search" placeholder="Cerca o inizia una nuova chat">
                         </div>
                     </div>
-                    <div class="contacts" v-for="element in contacts">
-                        <div class="contact">
+                    <div class="contacts" >
+                        <div class="contact"v-for="element in contacts">
                             <div class="contact-left">
                                 <img :src="element.avatar" :alt="element.avatar">
                                 <div class="contact-txt">
                                     <h3>{{element.name}}</h3>
-                                    <p>ultimo messaggio inviato</p>
+                                    <!-- se metto indice 2 diventa tutto bianco  -->
+                                    <p>{{element.messages[1].message}}</p>
                                 </div>
                             </div>
                             <div class="contact-right">
@@ -78,6 +79,10 @@
                         </div>
                     </div>
                     <div class="chat">
+                        <div class="chat-sent">
+                            <p>{{contacts[0].messages[0].message}}</p>
+                            <p>12:00</p>
+                        </div>
 
                     </div>
                     <div class="input-chat">

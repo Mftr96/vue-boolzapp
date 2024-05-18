@@ -151,6 +151,19 @@ section{
     height: 84%;
 }
 
+.chat-sent{
+    border: 1px solid black;
+    background-color: rgb(213, 249, 186);
+    padding: 0.5rem;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.chat-sent p:nth-child(2){
+    text-align: end;
+    font-size: smaller;
+}
+
 /* --------INPUT-CHAT STYLE-----------------  */
 
 .input-chat{
