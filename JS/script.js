@@ -173,6 +173,11 @@ createApp({
             utenteselezionato:0,
            
         }
+    },
+    methods:{
+        f_utente_chat(i){
+               console.log("hai cliccato",this.contacts[i])     
+        }
     }
 }).mount("#app");
 

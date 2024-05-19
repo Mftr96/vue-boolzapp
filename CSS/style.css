@@ -94,7 +94,9 @@ section{
     width: 95%;
 }
 /* ------CONTACTS STYLE------------ */
-
+.contacts{
+    overflow-y: auto;    
+}
 .contact{
     display: flex;
     justify-content: space-between;
@@ -131,6 +133,11 @@ section{
     align-items: center;
     gap: 0.5rem;
 
+}
+
+.contact-left img{
+    width: 70px;
+    height: 70px;
 }
 
 .contact-right{

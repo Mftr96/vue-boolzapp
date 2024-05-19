@@ -32,4 +32,27 @@ esecuzione milestone 1:
 (stampare ultimo msg nel div contact)
 aggiungere bottone invia nell'input-chat
 -capire come strutturare messaggi in chat
+------------------------------
+milestone 2:
+devo fare in modo di visualizzare i messaggi relativi al  contatto cliccato.
+Per ora ho messo come segnaposto la chat del primo contatto ma devo creare una funzione che al click dell'utente nei contatti vada a mostrare la relativa chat.
+cose che serviranno :
+ 
+-scrivere funzione nei methods che vada ad alterare la chat mostrando i messaggi relativi a quell'utente  
 
+-funzione @click sui div .contact
+
+che scrivo nella funzione?
+
+f_chat:nome funzione
+cosa vado ad alterare inanzitutto?
+-vado ad alterare nella parte a destra:
+-l'immagine con nome ed i messaggi in chat
+
+come le riconosco le varie chat?
+dall'indice della persona nel contacts: se è Michelel'indice è 0 e così via 
+
+potrei aggiungere negli oggetti persona un booleano di nome visualizzato che cambia al click?
+o aggiungo un'indice utenteselezionato in ogni persona con un valore e in base all'utente selezionato vado a cliccare ?
+
+potrei andare a cambiare l'indice (mettendo l'indice come argomento funzione)
