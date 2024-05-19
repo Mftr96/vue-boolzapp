@@ -45,8 +45,8 @@
                             <input type="search" placeholder="Cerca o inizia una nuova chat">
                         </div>
                     </div>
-                    <div class="contacts" >
-                        <div class="contact"v-for="element in contacts">
+                    <div class="contacts">
+                        <div class="contact" v-for="element in contacts">
                             <div class="contact-left">
                                 <img :src="element.avatar" :alt="element.avatar">
                                 <div class="contact-txt">
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                             <div class="contact-right">
-                                <p>12:00</p>
+                                <p>{{element.messages[0].date.substring(10,16)}}</p>
                             </div>
                         </div>
 
@@ -79,10 +79,26 @@
                         </div>
                     </div>
                     <div class="chat">
-                        <div class="chat-sent">
-                            <p>{{contacts[0].messages[0].message}}</p>
-                            <p>12:00</p>
+
+                        <div class="sent-box">
+                            <div class="chat-sent user-chat">
+                                <p>{{contacts[0].messages[0].message}}</p>
+                                <p>{{contacts[0].messages[0].date.substring(10,16)}}</p>
+                            </div>
+                            <div class="chat-sent user-chat">
+                                <p>{{contacts[0].messages[1].message}}</p>
+                                <p>{{contacts[0].messages[1].date.substring(10,16)}}</p>
+                            </div>
+
                         </div>
+                        <div class="received-box">
+                            <div class="chat-received contact-chat">
+                                <p>{{contacts[0].messages[2].message}}</p>
+                                <p>{{contacts[0].messages[2].date.substring(10,16)}}</p>
+                            </div>
+                        </div>
+
+
 
                     </div>
                     <div class="input-chat">
