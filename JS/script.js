@@ -168,8 +168,9 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
             
+            utenteselezionato:0,
            
         }
     }
