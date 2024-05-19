@@ -50,7 +50,7 @@ cosa vado ad alterare inanzitutto?
 -l'immagine con nome ed i messaggi in chat
 
 come le riconosco le varie chat?
-dall'indice della persona nel contacts: se è Michelel'indice è 0 e così via 
+dall'indice della persona nel contacts: se è Michele l'indice è 0 e così via 
 
 potrei aggiungere negli oggetti persona un booleano di nome visualizzato che cambia al click?
 o aggiungo un'indice utenteselezionato in ogni persona con un valore e in base all'utente selezionato vado a cliccare ?

@@ -175,8 +175,11 @@ createApp({
         }
     },
     methods:{
+        //funzione che seleziona l'indice da mettere per utenteselezionato
         f_utente_chat(i){
-               console.log("hai cliccato",this.contacts[i])     
+            this.utenteselezionato=i
+               console.log("hai cliccato",this.i,this.utenteselezionato)
+               console.log(this.utenteselezionato)     
         }
     }
 }).mount("#app");

@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="contacts">
-                        <div class="contact" v-for="element, i in contacts" @click="f_utente_chat(element)">
+                        <div class="contact" v-for="element, i in contacts" @click="f_utente_chat(i)">
                             <div class="contact-left">
                                 <img :src="element.avatar" :alt="element.avatar">
                                 <div class="contact-txt">
@@ -66,9 +66,9 @@
                 <div class="right-app">
                     <div class="contact-selected">
                         <div class="contact-left">
-                            <img :src="contacts[0].avatar" alt="">
+                            <img :src="contacts[utenteselezionato].avatar" alt="">
                             <div>
-                                <h3>{{contacts[0].name}}</h3>
+                                <h3>{{contacts[utenteselezionato].name}}</h3>
                                 <p>Ultimo accesso alle 12</p>
                             </div>
                         </div>
@@ -82,20 +82,20 @@
                         
                         <div class="sent-box">
                             <div class="chat-sent user-chat">
-                                <p>{{contacts[0].messages[0].message}}</p>
-                                <p>{{contacts[0].messages[0].date.substring(10,16)}}</p>
+                                <p>{{contacts[utenteselezionato].messages[0].message}}</p>
+                                <p>{{contacts[utenteselezionato].messages[0].date.substring(10,16)}}</p>
                             </div>
                             <div class="chat-sent user-chat">
-                                <p>{{contacts[0].messages[1].message}}</p>
-                                <p>{{contacts[0].messages[1].date.substring(10,16)}}</p>
+                                <p>{{contacts[utenteselezionato].messages[1].message}}</p>
+                                <p>{{contacts[utenteselezionato].messages[1].date.substring(10,16)}}</p>
                             </div>
                             
                         </div>
                         
                         <div class="received-box">
                             <div class="chat-received contact-chat">
-                                <p>{{contacts[0].messages[2].message}}</p>
-                                <p>{{contacts[0].messages[2].date.substring(10,16)}}</p>
+                                <p>{{contacts[utenteselezionato].messages[2].message}}</p>
+                                <p>{{contacts[utenteselezionato].messages[2].date.substring(10,16)}}</p>
                             </div>
                         </div>
                         
