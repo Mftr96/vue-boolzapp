@@ -157,6 +157,7 @@ section{
     border: 1px solid black;
     height: 84%;
     padding: 2rem;
+    position: relative;
 }
 
 .chat-sent,.chat-received{
@@ -172,11 +173,11 @@ section{
 }
 
 /* classe messaggi */
-.user-chat{
+.sent{
     background-color:rgb(213, 249, 186) ;
 }
 
-.contact-chat{
+.received{
     background-color: white;
 }
 /* --------INPUT-CHAT STYLE-----------------  */

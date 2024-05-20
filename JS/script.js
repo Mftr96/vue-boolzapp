@@ -178,7 +178,7 @@ createApp({
         //funzione che seleziona l'indice da mettere per utenteselezionato
         f_utente_chat(i){
             this.utenteselezionato=i
-               console.log("hai cliccato",this.i,this.utenteselezionato)
+               console.log("hai cliccato",i,this.utenteselezionato)
                console.log(this.utenteselezionato)     
         }
     }

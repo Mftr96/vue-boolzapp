@@ -79,27 +79,12 @@
                         </div>
                     </div>
                     <div class="chat">
-                        
-                        <div class="sent-box">
-                            <div class="chat-sent user-chat">
-                                <p>{{contacts[utenteselezionato].messages[0].message}}</p>
-                                <p>{{contacts[utenteselezionato].messages[0].date.substring(10,16)}}</p>
-                            </div>
-                            <div class="chat-sent user-chat">
-                                <p>{{contacts[utenteselezionato].messages[1].message}}</p>
-                                <p>{{contacts[utenteselezionato].messages[1].date.substring(10,16)}}</p>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="received-box">
-                            <div class="chat-received contact-chat">
-                                <p>{{contacts[utenteselezionato].messages[2].message}}</p>
-                                <p>{{contacts[utenteselezionato].messages[2].date.substring(10,16)}}</p>
+                        <div v-for="messaggio in contacts[utenteselezionato].messages">
+                            <div class="chat-sent user-chat" :class="messaggio.status">
+                                <p> {{messaggio.message}}</p>
+                                <p>{{messaggio.date.substring(10,16)}}</p>
                             </div>
                         </div>
-                        
-
                     </div>
                     <div class="input-chat">
                         <i class="fa-regular fa-face-smile"></i>
