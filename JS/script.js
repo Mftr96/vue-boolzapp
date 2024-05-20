@@ -169,8 +169,20 @@ createApp({
                     ],
                 }
             ],
-            
+            //indice del contatto da mostrare in pagina
             utenteselezionato:0,
+            //data relativo all'input chat dell'utente(avente forma come nell'array)
+            inputmsg:{
+                date: '10/01/2020 15:30:55',
+                message: "",
+                status: 'sent'
+            },
+            messaggioInput:"",
+            usermsg:{
+                date: '10/01/2020 15:30:58',
+                message: "ok",
+                status: 'received'
+            }
            
         }
     },
@@ -180,6 +192,21 @@ createApp({
             this.utenteselezionato=i
                console.log("hai cliccato",i,this.utenteselezionato)
                console.log(this.utenteselezionato)     
+        },
+        //funzione che all'invio(tramite tasto o icona)manda messaggio in chat 
+        f_invio_msg(){
+             let lista_messaggi=this.contacts[this.utenteselezionato].messages;
+             this.inputmsg.message=this.messaggioInput;
+             console.log(this.inputmsg)
+             lista_messaggi.push(this.inputmsg)
+             console.log(lista_messaggi)
+            
+            //scrivere funzione temporale che ritorni una risposta 
+            setTimeout(() => {
+                console.log("funzione temporale") 
+                lista_messaggi.push(this.usermsg)
+                
+            }, 3000);
         }
     }
 }).mount("#app");

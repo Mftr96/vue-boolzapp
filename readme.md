@@ -56,3 +56,16 @@ potrei aggiungere negli oggetti persona un booleano di nome visualizzato che cam
 o aggiungo un'indice utenteselezionato in ogni persona con un valore e in base all'utente selezionato vado a cliccare ?
 
 potrei andare a cambiare l'indice (mettendo l'indice come argomento funzione)
+--------------------------
+
+esecuzione milestone 3:
+devo aggiungere un messaggio in pagina da parte dell'utente 
+cosa ho bisogno:
+-input(ce l'ho)
+-variabile da collegare all'utente(manca)
+-funzione (da creare)
+-collegare funzione al'input tramite @keyenter(volendo mettere anche all'icona messaggio@click
+)
+
+-nella funzione temporale :
+-creo un data usermsg con valori simili a inputmsg(cambiare status da sent a received)
