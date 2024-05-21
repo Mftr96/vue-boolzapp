@@ -69,3 +69,15 @@ cosa ho bisogno:
 
 -nella funzione temporale :
 -creo un data usermsg con valori simili a inputmsg(cambiare status da sent a received)
+------------------
+milestone 4
+devo visualizzare solo i contatti che iniziano con il testo scritto nell'input
+cosa mi serve:
+-input nella parte contatti(c'é)
+-data per salvare quello che c'è scritto nell'input
+-confrontare quel dato con startwith il quale restituirà booleano
+-porre condizione
+
+come devo ragionare?
+scrivendo nell'input, devo confrontare la stringa scritta nell'input con il nome dei contatti 
+come faccio questo confronto?

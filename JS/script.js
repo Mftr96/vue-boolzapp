@@ -182,7 +182,9 @@ createApp({
                 date: '10/01/2020 15:30:58',
                 message: "ok",
                 status: 'received'
-            }
+            },
+            inputContatti:"",
+            // RicercaInputContatti:startsWith(inputContatti),
            
         }
     },

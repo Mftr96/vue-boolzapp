@@ -25,12 +25,19 @@ section{
     position: relative;
     z-index: 1;
 }
+
+i:hover,a:hover{
+    opacity: 0.5;
+}
+
+.contact:hover{
+    opacity: 0.8;
+}
 /* -------------------------------- */
 /* LEFT APP-STYLE */
 
 .left-app{
     width: 33%;
-    border: 1px solid black;
 }
 .user{
     display: flex;
@@ -68,9 +75,7 @@ section{
     padding: 0.4rem;
 }
 
-.new-msg >div> p{
-    text-decoration: underline;
-}
+
 /* -------------------- */
 /* SEARCH-MSG STYLE */
 .search-msg{
@@ -95,7 +100,10 @@ section{
 }
 /* ------CONTACTS STYLE------------ */
 .contacts{
-    overflow-y: auto;    
+    overflow-y: auto;
+    background-color: whitesmoke;
+    height: 79%;
+    
 }
 .contact{
     display: flex;
@@ -154,7 +162,6 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    border: 1px solid black;
     height: 84%;
     padding: 2rem;
     position: relative;
@@ -180,6 +187,13 @@ section{
 
 .received{
     background-color: white;
+}
+
+.block{
+    display: block;
+}
+.none{
+    display: none;
 }
 /* --------INPUT-CHAT STYLE-----------------  */
 
