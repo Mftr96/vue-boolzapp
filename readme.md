@@ -1,5 +1,17 @@
+# boolzapp ITA
+
+questo progetto prevede la replica layout di Whatsapp utilizzando come framework Vuejs.
+come funzionalità abbiamo la ricerca nei contatti sulla parte sinistra mentre sulla parte destra abbiamo la schermata della chat nella quale possiamo inviare un messaggio che ci risponderà in automatico ok .
+Questa repo fa parte dei lavori effettuati durante il corso di web development organizzato da Boolean. con questa repo nello specifico ho capito quali possono essere le funzionalità di Vue e di come questo framework sia un grande strumento nella realizzazione di siti web e di web app.
+La difficoltà riscontrata in questo esercizio è stata l'applicazione delle logiche di Vue in un contesto "vero", quindi capire come implementare la ricerca dei contatti e capire come strutturare l'input dei messaggi. 
 
 
+
+# boolzapp ENG
+This project involves replicating the Whatsapp layout using Vuejs as the framework. The features include searching contacts on the left side, while on the right side, we have the chat screen where we can send a message that will automatically reply 'ok'. This repository is part of the work done during the web development course organized by Boolean. With this specific repository, I understood the potential functionalities of Vue and how this framework is a great tool in building websites and web apps. The challenge faced in this exercise was applying Vue logics in a "real" context, understanding how to implement contact search and structuring message inputs.
+
+
+## milestone ed esecuzione  
 Milestone 1
 Replica della grafica con la possibilità di avere messaggi scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due classi CSS diverse
 Visualizzazione dinamica della lista contatti: tramite la direttiva v-for, visualizzare nome e immagine di ogni contatto
@@ -8,9 +20,6 @@ Visualizzazione dinamica della lista contatti: tramite la direttiva v-for, visua
 Milestone 2
 Visualizzazione dinamica dei messaggi: tramite la direttiva v-for, visualizzare tutti i messaggi relativi al contatto attivo all’interno del pannello della conversazione
 Click sul contatto mostra la conversazione del contatto cliccato
-
-
-
 
 Milestone 3
 Aggiunta di un messaggio: l’utente scrive un testo nella parte bassa e digitando “enter” il testo viene aggiunto al thread sopra, come messaggio verde

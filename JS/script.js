@@ -173,13 +173,13 @@ createApp({
             utenteselezionato:0,
             //data relativo all'input chat dell'utente(avente forma come nell'array)
             inputmsg:{
-                date: '10/01/2020 15:30:55',
+                date: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
                 message: "",
                 status: 'sent'
             },
             messaggioInput:"",
             usermsg:{
-                date: '10/01/2020 15:30:58',
+                date: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
                 message: "ok",
                 status: 'received'
             },
