@@ -11,7 +11,7 @@ La difficoltà riscontrata in questo esercizio è stata l'applicazione delle log
 This project involves replicating the Whatsapp layout using Vuejs as the framework. The features include searching contacts on the left side, while on the right side, we have the chat screen where we can send a message that will automatically reply 'ok'. This repository is part of the work done during the web development course organized by Boolean. With this specific repository, I understood the potential functionalities of Vue and how this framework is a great tool in building websites and web apps. The challenge faced in this exercise was applying Vue logics in a "real" context, understanding how to implement contact search and structuring message inputs.
 
 
-## milestone ed esecuzione  
+# milestone ed esecuzione  
 Milestone 1
 Replica della grafica con la possibilità di avere messaggi scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due classi CSS diverse
 Visualizzazione dinamica della lista contatti: tramite la direttiva v-for, visualizzare nome e immagine di ogni contatto
