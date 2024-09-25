@@ -22,7 +22,8 @@
                 <div class="left-app">
                     <div class="user">
                         <div class="user-left">
-                            <img src="https://i.pravatar.cc/70" alt="">
+                            <!-- https://i.pravatar.cc/70 -->
+                            <img src="/img/pexels-caio-58463.jpg" width="70" height="70" alt="">
                             <p>Sofia</p>
                         </div>
                         <div class="user-right">
@@ -43,13 +44,14 @@
                         <div>
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input v-model="inputContatti" type="search" placeholder="Cerca o inizia una nuova chat">
-                            
+
                         </div>
-                        
+
                     </div>
                     <div class="contacts">
-                        
-                        <div class="contact" :class="(element.name.startsWith(inputContatti))? 'flex' : 'none' " v-for="element, i in contacts" @click="f_utente_chat(i)" >
+
+                        <div class="contact" :class="(element.name.startsWith(inputContatti))? 'flex' : 'none' "
+                            v-for="element, i in contacts" @click="f_utente_chat(i)">
                             <div class="contact-left">
                                 <img :src="element.avatar" :alt="element.avatar">
                                 <div class="contact-txt">
@@ -63,7 +65,7 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
                 <!-- COLONNA DX APP -->
@@ -84,23 +86,24 @@
                     </div>
                     <div class="chat">
                         <div class="chat-box">
-                            <div v-for="messaggio in contacts[utenteselezionato].messages" >
+                            <div v-for="messaggio in contacts[utenteselezionato].messages">
                                 <div class="chat-sent user-chat" :class="messaggio.status">
                                     <p> {{messaggio.message}}</p>
                                     <p>{{messaggio.date.substring(10,16)}}</p>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
-                        
+
                     </div>
                     <div class="input-chat">
                         <i class="fa-regular fa-face-smile"></i>
-                        <input @keyup.enter="f_invio_msg()" v-model="messaggioInput" type="text" placeholder="Scrivi un messaggio">
+                        <input @keyup.enter="f_invio_msg()" v-model="messaggioInput" type="text"
+                            placeholder="Scrivi un messaggio">
                         <i @click="f_invio_msg()" class="fa-solid fa-message"></i>
                         <i class="fa-solid fa-microphone"></i>
-                        
+
+                    </div>
                 </div>
-            </div>
         </header>
         <section></section>
     </div>
